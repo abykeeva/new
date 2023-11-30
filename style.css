@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 56px 0 16px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #aeaeae;
+}
+
+.header-text {
+  display: flex;
+}
+
+.header-text > h1 {
+  color: #6b2424;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 88.4%;
+  letter-spacing: 2.88px;
+  margin-right: 71px;
+}
+
+.header-text > h1 > span {
+  color: #ff7a00;
+}
+
+.header-address {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header-address p {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 88.4%;
+  letter-spacing: 1.2px;
+}
+
+.header-location {
+  display: flex;
+  gap: 11px;
+}
+
+.header-number {
+  display: flex;
+  gap: 13px;
+  padding-left: 2px;
+}
+
+.header-btns {
+  display: flex;
+  gap: 23px;
+}
+
+.header-btns button {
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  width: 49px;
+  height: 49px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 88.4%;
+  letter-spacing: 0.72px;
+}
+
+.nav {
+  display: flex;
+  gap: 110px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.nav input {
+  display: none;
+}
+
+.nav label {
+  cursor: pointer;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 141px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff7a00;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 88.4%;
+  letter-spacing: 1.2px;
+}
+
+.nav label:hover {
+  background: #fa973a93;
+  color: white;
+}
+
+#пицца:checked ~ .tabs1 {
+  background: #fa963a;
+  color: white;
+}
+
+#суши:checked ~ .tabs2 {
+  background: #fa963a;
+  color: white;
+}
+#комбо:checked ~ .tabs3 {
+  background: #fa963a;
+  color: white;
+}
+#десерты:checked ~ .tabs4 {
+  background: #fa963a;
+  color: white;
+}
+#закуски:checked ~ .tabs5 {
+  background: #fa963a;
+  color: white;
+}
+
+#пицца:checked ~ .суши,
+#пицца:checked ~ .комбо,
+#пицца:checked ~ .десерты,
+#пицца:checked ~ .закуски {
+  display: none;
+}
+
+#суши:checked ~ .пицца,
+#суши:checked ~ .комбо,
+#суши:checked ~ .десерты,
+#суши:checked ~ .закуски {
+  display: none;
+}
+
+#комбо:checked ~ .пицца,
+#комбо:checked ~ .суши,
+#комбо:checked ~ .десерты,
+#комбо:checked ~ .закуски {
+  display: none;
+}
+
+#десерты:checked ~ .пицца,
+#десерты:checked ~ .суши,
+#десерты:checked ~ .комбо,
+#десерты:checked ~ .закуски {
+  display: none;
+}
+
+#закуски:checked ~ .пицца,
+#закуски:checked ~ .суши,
+#закуски:checked ~ .комбо,
+#закуски:checked ~ .десерты {
+  display: none;
+}
+
+.pizza-cart {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  width: 230px;
+  height: 288px;
+}
+
+.pizza-cart-bg {
+  border-radius: 28px;
+  background: rgba(176, 170, 211, 0.4);
+  backdrop-filter: blur(17.5px);
+  width: 193.616px;
+  height: 149px;
+  margin: -20 auto 0;
+}
+
+.pizza-cart h4 {
+  display: flex;
+}
+
+.pizza-cart span {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 9px;
+  font-weight: 500;
+  align-items: center;
+}
